@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>SV Events</title>
+    <link rel ="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body><center>
+        <h1 class="header"> SV Events
+        <sup><img src="img2.jpg" height="100px" width="100px"><img src="img1.png" height="100px" width="100px">
+           
+            <div class="ab"><a href="index.html" class="btn btn-primary btn-lg ">
+    <span class="glyphicon glyphicon-log-out" ></span> Logout
+  </a></div></sup></h1>
+        <div class=" cols-xl-10 cols-lg-8 cols-md-8 cols-sm-6 cols-xs-6 ">
+ <form>
+        <label>username : </label><input type="text" id="user_name" placeholder="your name"><br><br>
+        <label>email : </label><input type="text" id="email" placeholder="your Email"><br><br></form>
+        <a href="first.html" class="btn btn-primary btn-lg active" role="button" onclick="accept()">Login</a>  
+    </div></center>
+  <script>     
+        
+    function accept(){
+    user_name = document.getElementById("user_name").value;
+    localStorage.setItem("ur name", user_name);
+    var email = document.getElementById("email").value;
+    localStorage.setItem("ur email", email);
+   
+}
+    </script> 
+    
+    </body>
+    
+</html>
